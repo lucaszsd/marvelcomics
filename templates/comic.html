@@ -1,0 +1,18 @@
+
+
+
+  
+<div ng-repeat="comic in more.comics"  class="comic-container" >
+	<a href="#/{{comic.id}}">
+		<div ng-controller = "con" ng-class="chooseClass()" 
+		style="background-image: url({{comic.thumbnail.path}}.{{comic.thumbnail.extension}})" >
+			<h3>{{comic.title}}</h3>
+		
+			<h4>Raro</h4>
+			
+		</div>	
+	</a>
+</div>
+
+<div ui-view></div>
+
